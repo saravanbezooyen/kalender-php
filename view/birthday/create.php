@@ -1,4 +1,5 @@
 <div class="container">
+<h2>Verjaardag toevoegen</h2>
 	<form action="<?= URL ?>birthday/createSave" method="post">
 	<label>
 		<p><input type="text" name="person" placeholder="Naam"></p>

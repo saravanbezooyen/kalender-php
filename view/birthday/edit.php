@@ -1,5 +1,5 @@
 <div class="container">
-	<h1>Edit</h1>
+	<h1>Verjaardag bewerken</h1>
 	<form action="<?= URL ?>birthday/editSave" method="post">
 	
 		<p><input type="text" name="person" value="<?= $birthday['person']; ?>"></p>

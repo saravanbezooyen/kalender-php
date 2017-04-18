@@ -4,9 +4,11 @@ require(ROOT . "model/BirthdayModel.php");
 
 function index()
 {
+ 	$months = array("januari" , "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+
 	render("birthday/index", array(
-		'birthdays' => getAllBirthdays()
-	));
+		'birthdays' => getAllBirthdays(),
+		'months' => $months));
 }
 
 function create()
