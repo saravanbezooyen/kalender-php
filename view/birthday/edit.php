@@ -2,10 +2,12 @@
 	<h1>Edit</h1>
 	<form action="<?= URL ?>birthday/editSave" method="post">
 	
-		<input type="text" name="person" value="<?= $birthday['birthday_person']; ?>">
-		<input type="date" name="date" value="<?= $birthday['birthday_date']; ?>">
-		
-		<input type="hidden" name="id" value="<?= $birthday['birthday_id']; ?>">
+		<p><input type="text" name="person" value="<?= $birthday['person']; ?>"></p>
+		<p><input type="text" name="day" value="<?= $birthday['day']; ?>"></p>
+		<p><input type="text" name="month" value="<?= $birthday['month']; ?>"></p>
+		<p><input type="text" name="year" value="<?= $birthday['year']; ?>"></p>
+
+		<input type="hidden" name="id" value="<?= $birthday['id']; ?>">
 		<input type="submit" value="Verzenden">
 	
 	</form>

@@ -5,7 +5,7 @@ require(ROOT . "model/BirthdayModel.php");
 function index()
 {
 	render("birthday/index", array(
-		'birthday' => getAllBirthdays()
+		'birthdays' => getAllBirthdays()
 	));
 }
 
@@ -27,7 +27,7 @@ function createSave()
 function edit($id)
 {
 	render("birthday/edit", array(
-		'birthday' => getStudent($id)
+		'birthday' => getBirthday($id)
 	));
 }
 
